@@ -1,0 +1,56 @@
+---
+// AboutComponent.astro
+---
+
+<section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-16 items-center">
+        
+        <!-- Imagen con bloque arquitectónico ajustado -->
+        <div class="relative lg:order-2">
+          <!-- Imagen principal -->
+          <img src="https://via.placeholder.com/600x400" alt="Sobre Nosotros" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+          
+          <!-- Detalle geométrico en la imagen -->
+          <div class="absolute top-0 left-0 w-20 h-20 bg-blue-600 transform -translate-x-5 -translate-y-5 z-10"></div>
+        </div>
+        
+        <!-- Texto alineado y ajustado -->
+        <div class="lg:order-1">
+          <h2 class="text-4xl font-extrabold text-gray-900 leading-tight tracking-tight">
+            Nuestra Historia
+          </h2>
+          <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+            Con más de 20 años en el mercado, <span class="font-semibold">[Nombre de la Empresa]</span> ha liderado algunos de los proyectos de construcción más destacados del país. Nuestra misión es transformar ideas visionarias en infraestructuras sólidas y sostenibles que perduren generaciones.
+          </p>
+          <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+            Nos especializamos en la construcción de soluciones arquitectónicas y urbanísticas que abarcan desde complejos industriales hasta proyectos residenciales de gran envergadura. Cada proyecto es una oportunidad para demostrar nuestro compromiso con la excelencia y la innovación en el sector.
+          </p>
+  
+          <!-- Datos destacados más alineados y espaciados -->
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="text-center">
+              <span class="block text-3xl font-extrabold text-blue-600">500+</span>
+              <p class="mt-2 text-lg text-gray-600">Proyectos Completados</p>
+            </div>
+            <div class="text-center">
+              <span class="block text-3xl font-extrabold text-blue-600">20 Años</span>
+              <p class="mt-2 text-lg text-gray-600">de Experiencia</p>
+            </div>
+            <div class="text-center">
+              <span class="block text-3xl font-extrabold text-blue-600">100+</span>
+              <p class="mt-2 text-lg text-gray-600">Clientes Satisfechos</p>
+            </div>
+          </div>
+  
+          <!-- Botón alineado y con espaciado adecuado -->
+          <div class="mt-10">
+            <a href="#" class="inline-block px-8 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+              Conoce más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
