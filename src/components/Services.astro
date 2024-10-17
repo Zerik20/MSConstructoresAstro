@@ -1,81 +1,58 @@
-<section class="bg-gray-100 py-16" id="SERVICIOS">
-  <br>
+---
+import ServiceCard from "./ServiceCard.astro"
+---
+
+<section class="bg-gray-50 py-16" id="SERVICIOS">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12" data-aos="fade-up">
-      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-        Nuestros Servicios
-      </h2>
-      <p class="mt-4 text-lg text-gray-600">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-extrabold text-gray-900">Nuestros Servicios</h2>
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
         Ofrecemos una amplia gama de servicios para cumplir con todas las necesidades del sector inmobiliario, brindando soluciones integrales para cada proyecto.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Servicio 1 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-        <img src="/img/Servicios/Servicios1.jpg" alt="Servicio 1" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-800">Diseño Arquitectónico</h3>
-          <p class="mt-2 text-gray-600">
-            Creación de proyectos arquitectónicos personalizados, optimizados para funcionalidad y estética en proyectos residenciales y comerciales.
-          </p>
-        </div>
-      </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <ServiceCard 
+        imgSrc="/img/Servicios/Servicios1.jpg" 
+        title="Diseño Arquitectónico" 
+        description="Creación de proyectos arquitectónicos personalizados, optimizados para funcionalidad y estética en proyectos residenciales y comerciales."
+        delay={100}
+      />
 
-      <!-- Servicio 2 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-        <img src="/img/Servicios/Servicios2.jpg" alt="Servicio 2" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-800">Construcción de Viviendas</h3>
-          <p class="mt-2 text-gray-600">
-            Construcción de casas unifamiliares, complejos residenciales y edificios multifamiliares de alta calidad.
-          </p>
-        </div>
-      </div>
+      <ServiceCard 
+        imgSrc="/img/Servicios/Servicios2.jpg" 
+        title="Construcción de Viviendas" 
+        description="Construcción de casas unifamiliares, complejos residenciales y edificios multifamiliares de alta calidad."
+        delay={200}
+      />
 
-      <!-- Servicio 3 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-        <img src="/img/Servicios/Servicios3.jpg" alt="Servicio 3" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-800">Desarrollo Inmobiliario</h3>
-          <p class="mt-2 text-gray-600">
-            Gestión integral de proyectos inmobiliarios, desde la adquisición de terrenos hasta la venta de propiedades terminadas.
-          </p>
-        </div>
-      </div>
+      <ServiceCard 
+        imgSrc="/img/Servicios/Servicios3.jpg" 
+        title="Desarrollo Inmobiliario" 
+        description="Gestión integral de proyectos inmobiliarios, desde la adquisición de terrenos hasta la venta de propiedades terminadas."
+        delay={300}
+      />
 
-      <!-- Servicio 4 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-        <img src="/img/Servicios/Servicios4.jpg" alt="Servicio 4" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-800">Remodelación y Renovación</h3>
-          <p class="mt-2 text-gray-600">
-            Remodelación y actualización de propiedades existentes para aumentar su valor y mejorar su funcionalidad.
-          </p>
-        </div>
-      </div>
+      <ServiceCard 
+        imgSrc="/img/Servicios/Servicios4.jpg" 
+        title="Remodelación y Renovación" 
+        description="Remodelación y actualización de propiedades existentes para aumentar su valor y mejorar su funcionalidad."
+        delay={400}
+      />
 
-      <!-- Servicio 5 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="500">
-        <img src="/img/Servicios/Servicios5.jpg" alt="Servicio 5" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-800">Gestión de Proyectos</h3>
-          <p class="mt-2 text-gray-600">
-            Coordinación y supervisión completa de proyectos de construcción, asegurando que se entreguen a tiempo y dentro del presupuesto.
-          </p>
-        </div>
-      </div>
+      <ServiceCard 
+        imgSrc="/img/Servicios/Servicios5.jpg" 
+        title="Gestión de Proyectos" 
+        description="Coordinación y supervisión completa de proyectos de construcción, asegurando que se entreguen a tiempo y dentro del presupuesto."
+        delay={500}
+      />
 
-      <!-- Servicio 6 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="600">
-        <img src="/img/Servicios/Servicios6.jpg" alt="Servicio 6" class="w-full h-56 object-cover">
-        <div class="p-6">
-          <h3 class="text-lg font-semibold text-gray-800">Consultoría Inmobiliaria</h3>
-          <p class="mt-2 text-gray-600">
-            Asesoramiento experto en compra, venta y desarrollo de propiedades, adaptado a las necesidades del cliente.
-          </p>
-        </div>
-      </div>
+      <ServiceCard 
+        imgSrc="/img/Servicios/Servicios6.jpg" 
+        title="Consultoría Inmobiliaria" 
+        description="Asesoramiento experto en compra, venta y desarrollo de propiedades, adaptado a las necesidades del cliente."
+        delay={600}
+      />
     </div>
   </div>
 </section>
